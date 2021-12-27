@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/margin_8">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/rel_station"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_8">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_station_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                app:srcCompat="@drawable/ic_baseline_location_on_24"
+                android:layout_marginEnd="@dimen/margin_16"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/img_station_logo"
+                android:layout_toEndOf="@id/img_crossLine"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/app_name"
+                    android:layout_marginEnd="@dimen/margin_8"/>
+
+                <TextView
+                    android:id="@+id/txt_english_title"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_8"/>
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_crossLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_16"
+                app:srcCompat="@drawable/ic_baseline_view_headline_24" />
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
